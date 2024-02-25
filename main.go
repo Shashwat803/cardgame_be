@@ -113,7 +113,7 @@ func main() {
 	router := gin.Default()
 
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:3000"} // Add your frontend URL here
+	config.AllowOrigins = []string{"https://cardgame-fe.vercel.app"} // Add your frontend URL here
 	config.AllowHeaders = []string{"Origin", "Content-Type", "Accept"}
 	router.Use(cors.New(config))
 
